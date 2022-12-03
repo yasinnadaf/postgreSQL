@@ -1,0 +1,33 @@
+CREATE TABLE students(id serial PRIMARY KEY,name VARCHAR ( 50 ) UNIQUE NOT NULL,age int);
+
+insert into students(name,age) values('bob','21');
+
+insert into students(name,age) values('abhi','19');
+
+insert into students(name,age) values('sagar','23');
+
+insert into students(name,age) values('saud','20');
+
+select * from students;
+
+insert into students(name,age) values('raj','25');
+
+insert into students(name,age) values('saad','24');
+
+select * from students;
+
+update students set age=18 where name='raj';
+
+select * from students;
+
+update students set name='rahul' where age=19;
+
+select * from students where age < 20;
+
+insert into students(name,age) values('sami','24');
+
+insert into students(name,age) values('amit','20');
+
+SELECT age FROM students order by 1;
+
+SELECT DISTINCT age FROM students order by 1;
